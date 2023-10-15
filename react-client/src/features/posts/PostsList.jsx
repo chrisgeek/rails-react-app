@@ -13,7 +13,6 @@ function PostsList(){
         if(res.ok) {
           const data = await res.json() // convert to json
           setPosts(data)
-          console.log(data)
         }
         else {
           throw res;
