@@ -38,6 +38,9 @@ function PostsList(){
             {post.title}
           </Link>
           <p>{post.body}</p>
+           <Link to={`/posts/${post.id}/edit`}>
+             Edit
+          </Link>
         </div>
       ))}    
     </div>

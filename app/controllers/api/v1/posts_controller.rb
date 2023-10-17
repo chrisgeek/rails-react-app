@@ -46,6 +46,6 @@ class Api::V1::PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.permit(:title, :body, :post)
+      params.permit(:title, :body)
     end
 end
